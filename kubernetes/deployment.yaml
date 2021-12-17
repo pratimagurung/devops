@@ -28,7 +28,8 @@ metadata:
 spec:
   selector:
     app: practice
+  type: NodePort
   ports:
     - port: 80
       targetPort: 8080
-  type: LoadBalancer
+      nodePort: 31000
